@@ -114,7 +114,7 @@ export const EventPage = () => {
   };
 
   const handleDeleteEvent = async () => {
-    if (window.confirm("Are you sure youu want to delete this event?")) {
+    if (window.confirm("Are you sure you want to delete this event?")) {
       const response = await fetch(`http://localhost:3000/events/${event.id}`, {
         method: "DELETE",
       });
